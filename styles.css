@@ -1,0 +1,86 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.avatar {
+    width: 150px;
+    border-radius: 25% 10%;
+}
+:root {
+  overflow: hidden; /* hides any part of the sun below the horizon */
+  background-color: none;
+  display: flex;
+  justify-content: center; /* centers the sun in the background */
+}
+
+
+@keyframes sun-rise {
+  from {
+    /* pushes the sun down past the viewport */
+    transform: translateY(110vh);
+  }
+  to {
+    /* returns the sun to its default position */
+    transform: translateY(0);
+  }
+}
+
+.card {
+   /* height: 100vh;  makes the sun the size of the viewport */
+  /* aspect-ratio: 1 / 1; */
+  animation: 2s linear 0s infinite alternate sun-rise;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #edede9;
+    color: #d6ccc2;
+    border-bottom: 6px solid #f5ebe0;
+    border-radius: 25% 10%;
+    box-shadow: 12px 12px 2px 1px #e3d5ca;
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+.border-blue {
+    border: 4mm ridge #e3d5ca;
+    border-radius: 25% 10%;
+}
+@media (hover: hover) {
+  /* when hover is supported */
+  h3:hover {
+    color: white;
+    background:#d5bdaf;
+  }
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
